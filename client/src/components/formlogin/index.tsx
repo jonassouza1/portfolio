@@ -27,6 +27,7 @@ export const FormLogin = () => {
         const login = await fetch(`${baseUrl}/userlogin`, body);
         const getUser = await login.json();
         setValidate(getUser.message);
+        console.log(getUser);
         if (getUser.message === "Login Successfully ") {
           sessionStorage.setItem("Token", getUser.message);
           setIsLoggedIn(true);
@@ -52,43 +53,45 @@ export const FormLogin = () => {
     return <Home />;
   }
   return (
-    <>
-      <form>
-        <label htmlFor="name">What Is Your Name</label>
-        <br />
-        <input
-          required={true}
-          type="text"
-          placeholder="Type Your Name"
-          id="name"
-          onChange={(e) => {
-            setstate({ ...state, name: e.target.value });
-          }}
-          value={state.name}
-        />
-        <br />
-        <br />
-        <label htmlFor="senha">What Is Your password</label>
-        <br />
-        <input
-          required={true}
-          type="password"
-          placeholder="Type Your password"
-          id="senha"
-          onChange={(e) => {
-            setstate({ ...state, password: e.target.value });
-          }}
-          value={state.password}
-        />
-        <br /> <br />
-        <button
-          onClick={(e) => {
-            onsubmit(e);
-          }}
-        >
-          Login
-        </button>
-      </form>
-    </>
+    <section className="container">
+      <div className="section">
+        <form>
+          <h2>Login</h2>
+          <input
+            className="input"
+            required={true}
+            type="text"
+            placeholder="Type Your Name"
+            id="name"
+            onChange={(e) => {
+              setstate({ ...state, name: e.target.value });
+            }}
+            value={state.name}
+          />
+          <br />
+          <br />
+          <input
+            className="input"
+            required={true}
+            type="password"
+            placeholder="Type Your password"
+            id="senha"
+            onChange={(e) => {
+              setstate({ ...state, password: e.target.value });
+            }}
+            value={state.password}
+          />
+          <br /> <br />
+          <button
+            className="btn"
+            onClick={(e) => {
+              onsubmit(e);
+            }}
+          >
+            Login
+          </button>
+        </form>
+      </div>
+    </section>
   );
 };

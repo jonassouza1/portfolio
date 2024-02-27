@@ -2,7 +2,6 @@ import React, { useContext } from "react";
 import "./styled.css";
 import { Headers } from "../header";
 import { ThemeContext } from "../../theme-context";
-import appPokemon from "../../../../assets/appPokemon.gif";
 
 export const Home = () => {
   const { theme }: any = useContext(ThemeContext);

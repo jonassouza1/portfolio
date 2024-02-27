@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import "./styled.css";
 import { FormLogin } from "../formlogin";
 
 type Name = {
@@ -33,11 +34,10 @@ export const Form = () => {
       const result = await registered.json();
       setValidate(result.message);
       if (
-        result.message === "the name  is obrigatory" ||
+        result.message === "It is necessary to fill in the field" ||
         result.message === "our password must be at least 8 letters long..." ||
         result.message === "Your name must have at least 8 letters..."
       ) {
-        console.log(result.message);
       } else if (
         result.message === "you registered successfully " ||
         "duplicate name, it s not possible to register"
@@ -60,41 +60,51 @@ export const Form = () => {
   }
 
   return (
-    <>
-      <form>
-        <label htmlFor="name">enter the name</label>
-        <br />
-        <input
-          minLength={8}
-          required={true}
-          type="text"
-          id="name"
-          placeholder="enter the name"
-          onChange={(e) => setstate({ ...state, name: e.target.value })}
-          value={state.name}
-        />
-        <br />
-        <br />
-        <label htmlFor="senha">enter the password</label>
-        <br />
-        <input
-          minLength={8}
-          required={true}
-          type="password"
-          id="senha"
-          placeholder="enter the password"
-          onChange={(e) => setstate({ ...state, password: e.target.value })}
-          value={state.password}
-        />
-        <br /> <br />
-        <button
-          onClick={(e) => {
-            onSubmit(e);
-          }}
-        >
-          Register
-        </button>
-      </form>
-    </>
+    <section className="container">
+      <div className="section">
+        <form>
+          <label htmlFor="name">Name</label>
+          <br />
+          <input
+            className="input"
+            minLength={8}
+            required={true}
+            type="text"
+            id="name"
+            placeholder="enter the name"
+            onChange={(e) => setstate({ ...state, name: e.target.value })}
+            value={state.name}
+          />
+          {validate === "you registered successfully " ? (
+            <span className="greenn">{validate}</span>
+          ) : (
+            <span>{validate}</span>
+          )}
+          <br />
+          <br />
+          <label htmlFor="senha">Password</label>
+          <br />
+          <input
+            className="input"
+            minLength={8}
+            required={true}
+            type="password"
+            id="senha"
+            placeholder="enter the password"
+            onChange={(e) => setstate({ ...state, password: e.target.value })}
+            value={state.password}
+          />
+          <br /> <br />
+          <button
+            className="btn"
+            onClick={(e) => {
+              onSubmit(e);
+            }}
+          >
+            Register
+          </button>
+        </form>
+      </div>
+    </section>
   );
 };
