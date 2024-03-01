@@ -10,7 +10,7 @@ export const themes = {
     img: `${light}`,
   },
   dark: {
-    background: "black",
+    background: "#24272c",
     color: "white",
     img: `${dark}`,
   },

@@ -81,7 +81,6 @@ export const Form = () => {
             <span>{validate}</span>
           )}
           <br />
-          <br />
           <label htmlFor="senha">Password</label>
           <br />
           <input
