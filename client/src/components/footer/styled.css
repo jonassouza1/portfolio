@@ -1,0 +1,25 @@
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: 930px;
+  height: 800px;
+  background-color: chartreuse;
+  z-index: 10;
+}
+
+.imgContat {
+  display: flex;
+  width: 350px;
+  height: 356px;
+  background-color: aqua;
+
+}
+
+.infoContat {
+  display: flex;
+  width: 456px;
+  height: 464px;
+  background-color: beige;
+}

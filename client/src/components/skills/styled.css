@@ -1,0 +1,46 @@
+.skills {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 1058px;
+  height: 733px;
+
+  z-index: 1;
+
+}
+
+.skillsDiv {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.skillsDiv button {
+  cursor: pointer;
+  width: 40px;
+  height: 60px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.skillsDivImg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 621px;
+  height: 428px;
+
+}
+
+.skillsImg {
+  display: flex;
+  width: 232px;
+  height: 232px;
+  border-radius: 100%;
+  background-color: #7733FF;
+}
+
+.skillsImg img {
+  width: 100%;
+}
