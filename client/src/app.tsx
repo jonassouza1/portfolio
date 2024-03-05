@@ -4,11 +4,9 @@ import { Provider } from "./theme-context";
 import "./styled.css";
 const App = () => {
   return (
-    <body>
-      <Provider>
-        <Form />
-      </Provider>
-    </body>
+    <Provider>
+      <Form />
+    </Provider>
   );
 };
 

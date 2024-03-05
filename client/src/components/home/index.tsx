@@ -1,11 +1,12 @@
-import React, { useContext, useState } from "react";
+import React, { useContext } from "react";
 import "./styled.css";
 import { Headers } from "../header";
 import { ThemeContext } from "../../theme-context";
-import { Parallax } from "../paralaxx";
+import { Parallax2 } from "../parallax2";
 import { Footer } from "../footer";
 import { Skills } from "../skills";
 import { Projects } from "../projects";
+import { Parallax1 } from "../parallax1";
 export const Home = () => {
   const { theme }: any = useContext(ThemeContext);
 
@@ -19,17 +20,17 @@ export const Home = () => {
         <div className="logName">
           <p className="hey">hey</p>
           <h1 className="title">I´m Jonas Souza</h1>
-          <h2>development web fullstack</h2>
+          <h2>Fullstack Web Developer</h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Et quisquam
-            repellendus, aut ipsa provident eaque excepturi numquam minima
-            laudantium odio saepe, alias doloribus tempore, molestias ipsum
-            voluptatibus minus velit deserunt!
+            With lines of code as brushes, I design the future of the web.
+            Frontend that delights, backend that surprises. Transforming ideas
+            into experiences, I am the digital architect who builds bridges
+            between dreams and reality.
           </p>
         </div>
       </div>
-
       <section>
+        <Parallax1 />
         <div className="aboutMe">
           <div className="b1">
             <img src="../../../../assets/developmentweb.jpg" alt="" />
@@ -37,20 +38,21 @@ export const Home = () => {
           <div className="b2">
             <h3>About me</h3>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed
-              facere praesentium fuga non aperiam unde quis earum, blanditiis
-              voluptates architecto laborum tempore modi numquam exercitationem
-              ut nemo quia vero odio.
+              I embarked on this journey in October 2022, converting ideas into
+              digital reality. From code conception to final product, I build
+              experiences that stand out. My trajectory is marked by constant
+              evolution, guided by the incessant search for new challenges and
+              innovations.
             </p>
           </div>
         </div>
 
         <Projects />
 
-        <Parallax />
+        <Parallax2 />
         <Skills />
-        <Footer />
       </section>
+      <Footer />
     </main>
   );
 };

@@ -1,14 +1,16 @@
 import React, { useEffect } from "react";
 import "./styled.css"; // Certifique-se de criar este arquivo de estilo
 
-export const Parallax = () => {
+export const Parallax1 = () => {
   useEffect(() => {
     const handleScroll = () => {
       const parallaxContainer: any = document.querySelector(
-        ".parallax-container",
+        ".parallax-container1",
       );
       const scrollValue = window.scrollY;
-      parallaxContainer.style.transform = `translateY(${scrollValue * 0.5}px)`; // Ajuste o fator de parallax conforme necessário
+      requestAnimationFrame(() => {
+        parallaxContainer.style.transform = `translateY(${scrollValue * 0.3}px)`;
+      });
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -19,8 +21,8 @@ export const Parallax = () => {
   }, []);
 
   return (
-    <div className="parallax-container">
-      <img src="../../../../assets/background-dev.jpg" alt="" />
+    <div className="parallax-container1">
+      <img src="../../../../assets/parallax1.jpg" alt="" />
     </div>
   );
 };

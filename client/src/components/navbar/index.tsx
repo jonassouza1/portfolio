@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import "./index.css";
+import "./styled.css";
 import { ThemeContext, themes } from "../../theme-context";
 
 export const NavBar = () => {
@@ -8,33 +8,13 @@ export const NavBar = () => {
     <nav>
       <ul style={{ background: theme.background, color: theme.color }}>
         <li className="father">
-          <a className="children" href="#">
-            <h1> Projetos Frontend</h1>
+          <a href="../../../../assets/curriculum.pdf" target="_blank">
+            Curriculum
           </a>
-          <div className="dropdown">
-            <a
-              href="https://jonassouza1.github.io/projeto-the-last-of-us/"
-              target="_blank"
-            >
-              The Last Of US
-            </a>
-            <a
-              href="https://jonassouza1.github.io/projeto-inicial-fetch-github-api/"
-              target="_blank"
-            >
-              GitHub API
-            </a>
-            <a
-              href="https://jonassouza1.github.io/validation-form-design/"
-              target="_blank"
-            >
-              Formulário/validação
-            </a>
-          </div>
         </li>
         <li className="father">
           <a className="children" href="#">
-            <h1> Projetos Backend </h1>
+            Project Backend
           </a>
           <div className="dropdown">
             <a
@@ -48,9 +28,6 @@ export const NavBar = () => {
               target="_blank"
             >
               API/Prisma
-            </a>
-            <a href="https://newcloneapp.com.br/" target="_blank">
-              TabNews "em desenvolvimento"
             </a>
           </div>
         </li>

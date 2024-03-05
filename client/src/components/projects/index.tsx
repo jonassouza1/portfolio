@@ -6,7 +6,7 @@ export const Projects = () => {
   const [iframe, setiframe] = useState("");
   return (
     <>
-      <h2>Projects</h2>
+      <h2 style={{ zIndex: "1", marginTop: "200px" }}>Projects</h2>
       <div className="projects">
         <div className="projectsDivs">
           <div className="p1">

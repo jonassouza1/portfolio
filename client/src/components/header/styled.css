@@ -6,10 +6,27 @@ header {
   align-items: center;
   padding: 30px;
 }
+
+button:hover {
+  cursor: pointer;
+}
+
 button {
   background: none;
   border: none;
 }
+
 img {
   width: 50px;
+}
+
+.home {
+  position: fixed;
+  z-index: 3;
+}
+
+@media (max-width:460px) {
+  button {
+    width: 100px;
+  }
 }

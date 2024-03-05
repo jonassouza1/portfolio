@@ -5,12 +5,12 @@ import dark from "../../../assets/dark.png";
 
 export const themes = {
   light: {
-    background: "white",
-    color: "black",
+    background: "#1f1836",
+    color: "#d0f3f7",
     img: `${light}`,
   },
   dark: {
-    background: "#24272c",
+    background: "black",
     color: "white",
     img: `${dark}`,
   },

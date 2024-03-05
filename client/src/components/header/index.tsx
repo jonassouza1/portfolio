@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import { NavBar } from "../navbar";
-import "./index.css";
+import "./styled.css";
 import { ThemeContext, themes } from "../../theme-context";
 export const Headers = () => {
   const { theme, setTheme } = useContext<any>(ThemeContext);
@@ -8,6 +8,9 @@ export const Headers = () => {
   return (
     <>
       <header>
+        <a className="home" href="#">
+          <img src="../../../../assets/home.gif" alt="" />
+        </a>
         <NavBar />
         <button
           onClick={() => {

@@ -2,6 +2,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 400px;
   gap: 20px;
   width: 930px;
   height: 800px;
@@ -22,4 +23,55 @@ footer {
   width: 456px;
   height: 464px;
   background-color: beige;
+}
+
+@media (max-width:1300px) {
+
+  footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 400px;
+    gap: 20px;
+    max-width: 90%;
+    height: 800px;
+    background-color: chartreuse;
+    z-index: 10;
+  }
+
+}
+
+@media (max-width:700px) {
+  footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 400px;
+    gap: 20px;
+    max-width: 90%;
+    height: 800px;
+    background-color: chartreuse;
+    z-index: 10;
+  }
+
+
+}
+
+@media (max-width:460px) {
+  .imgContat {
+    display: flex;
+    width: 95%;
+    height: 356px;
+    background-color: aqua;
+
+  }
+
+  .infoContat {
+    display: flex;
+    width: 95%;
+    height: 464px;
+    background-color: beige;
+  }
+
 }
