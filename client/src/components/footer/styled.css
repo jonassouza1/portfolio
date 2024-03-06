@@ -6,7 +6,6 @@ footer {
   gap: 20px;
   width: 930px;
   height: 800px;
-  background-color: chartreuse;
   z-index: 10;
 }
 
@@ -14,16 +13,27 @@ footer {
   display: flex;
   width: 350px;
   height: 356px;
-  background-color: aqua;
+  box-shadow: 10px 10px 20px rebeccapurple;
+}
 
+.imgContat img {
+  width: 100%;
+  border-radius: 10px;
 }
 
 .infoContat {
   display: flex;
-  width: 456px;
-  height: 464px;
-  background-color: beige;
+  justify-content: space-around;
+  align-items: center;
+  width: 400px;
+  height: 200px;
+
 }
+
+.infoContat a i {
+  font-size: 100px;
+}
+
 
 @media (max-width:1300px) {
 
@@ -35,7 +45,6 @@ footer {
     gap: 20px;
     max-width: 90%;
     height: 800px;
-    background-color: chartreuse;
     z-index: 10;
   }
 
@@ -51,7 +60,6 @@ footer {
     gap: 20px;
     max-width: 90%;
     height: 800px;
-    background-color: chartreuse;
     z-index: 10;
   }
 
@@ -63,7 +71,6 @@ footer {
     display: flex;
     width: 95%;
     height: 356px;
-    background-color: aqua;
 
   }
 
@@ -71,7 +78,7 @@ footer {
     display: flex;
     width: 95%;
     height: 464px;
-    background-color: beige;
+
   }
 
 }

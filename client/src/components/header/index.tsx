@@ -9,7 +9,7 @@ export const Headers = () => {
     <>
       <header>
         <a className="home" href="#">
-          <img src="../../../../assets/home.gif" alt="" />
+          <img src="../../../../assets/home.jpg" alt="" />
         </a>
         <NavBar />
         <button

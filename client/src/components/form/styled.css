@@ -1,9 +1,11 @@
 .container {
   display: flex;
-  height: 800px;
+  width: 100vw;
+  height: 100vh;
   justify-content: center;
   align-items: center;
 }
+
 .section {
   display: flex;
   flex-direction: column;
@@ -14,21 +16,26 @@
   border-radius: 10%;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 }
+
 form {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
+
 label {
   font-weight: 800;
 }
+
 span {
   color: red;
 }
+
 .greenn {
   color: green;
 }
+
 .btn {
   cursor: pointer;
   padding: 12px 16px;
@@ -36,9 +43,11 @@ span {
   background-color: mediumaquamarine;
   transition: 0.4s;
 }
+
 .btn:hover {
   background-color: rgb(76, 253, 194);
 }
+
 .input {
   border-color: mediumaquamarine;
   border-radius: 5px;
@@ -46,6 +55,7 @@ span {
   transition: 0.4s;
   text-align: center;
 }
+
 .input:hover {
   border-color: rgb(76, 253, 194);
 }

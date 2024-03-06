@@ -57,6 +57,7 @@ export const FormLogin = () => {
       <div className="section">
         <form>
           <h2>Login</h2>
+          <br />
           <input
             className="input"
             required={true}

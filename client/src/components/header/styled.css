@@ -25,6 +25,11 @@ img {
   z-index: 3;
 }
 
+.home img {
+  width: 100%;
+  border-radius: 100%;
+}
+
 @media (max-width:460px) {
   button {
     width: 100px;
