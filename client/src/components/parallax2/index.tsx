@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
-import "./styled.css"; // Certifique-se de criar este arquivo de estilo
+import "./styled.css";
+import backgrounddev from "../../../../assets/background-dev.jpg";
 
 export const Parallax2 = () => {
   useEffect(() => {
@@ -10,7 +11,7 @@ export const Parallax2 = () => {
       const scrollValue = window.scrollY;
       requestAnimationFrame(() => {
         parallaxContainer.style.transform = `translateY(${scrollValue * 0.3}px)`;
-      }); // Ajuste o fator de parallax conforme necessário
+      });
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -22,7 +23,7 @@ export const Parallax2 = () => {
 
   return (
     <div className="parallax-container">
-      <img src="../../../../assets/background-dev.jpg" alt="" />
+      <img src={`${backgrounddev}`} alt="" />
     </div>
   );
 };

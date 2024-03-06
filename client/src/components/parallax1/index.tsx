@@ -1,5 +1,7 @@
 import React, { useEffect } from "react";
-import "./styled.css"; // Certifique-se de criar este arquivo de estilo
+import "./styled.css";
+
+import parallax1 from "../../../../assets/parallax1.jpg";
 
 export const Parallax1 = () => {
   useEffect(() => {
@@ -22,7 +24,7 @@ export const Parallax1 = () => {
 
   return (
     <div className="parallax-container1">
-      <img src="../../../../assets/parallax1.jpg" alt="" />
+      <img src={`${parallax1}`} alt="" />
     </div>
   );
 };

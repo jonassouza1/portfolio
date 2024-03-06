@@ -1,6 +1,11 @@
 import React from "react";
 import { useState } from "react";
 import "./styled.css";
+import github from "../../../../assets/githubappimg.jpg";
+import thelast from "../../../../assets/thelast.png";
+import logo from "../../../../assets/logoE.png";
+import enterface from "../../../../assets/interface.jpg";
+import form from "../../../../assets/form.jpg";
 
 export const Projects = () => {
   const [iframe, setiframe] = useState("");
@@ -17,7 +22,7 @@ export const Projects = () => {
                 );
               }}
             >
-              <img src="../../../../assets/githubappimg.jpg" alt="" />
+              <img src={`${github}`} alt="" />
             </a>
           </div>
           <div className="p1">
@@ -28,7 +33,7 @@ export const Projects = () => {
                 );
               }}
             >
-              <img src="../../../../assets/thelast.png" alt="" />
+              <img src={`${thelast}`} alt="" />
             </a>
           </div>
           <div className="p1">
@@ -37,7 +42,7 @@ export const Projects = () => {
                 setiframe("https://jonassouza1.github.io/company-page/");
               }}
             >
-              <img src="../../../../assets/logoE.png" alt="" />
+              <img src={`${logo}`} alt="" />
             </a>
           </div>
           <div className="p1">
@@ -48,7 +53,7 @@ export const Projects = () => {
                 );
               }}
             >
-              <img src="../../../../assets/interface.jpeg" alt="" />
+              <img src={`${enterface}`} alt="" />
             </a>
           </div>
           <div className="p1">
@@ -59,7 +64,7 @@ export const Projects = () => {
                 );
               }}
             >
-              <img src="../../../../assets/form.jpeg" alt="" />
+              <img src={`${form}`} alt="" />
             </a>
           </div>
         </div>

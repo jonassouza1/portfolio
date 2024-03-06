@@ -2,6 +2,7 @@ import React, { useContext } from "react";
 import { NavBar } from "../navbar";
 import "./styled.css";
 import { ThemeContext, themes } from "../../theme-context";
+import home from "../../../../assets/home.jpg";
 export const Headers = () => {
   const { theme, setTheme } = useContext<any>(ThemeContext);
 
@@ -9,7 +10,7 @@ export const Headers = () => {
     <>
       <header>
         <a className="home" href="#">
-          <img src="../../../../assets/home.jpg" alt="" />
+          <img src={`${home}`} alt="" />
         </a>
         <NavBar />
         <button

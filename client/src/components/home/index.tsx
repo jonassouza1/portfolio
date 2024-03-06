@@ -7,6 +7,8 @@ import { Footer } from "../footer";
 import { Skills } from "../skills";
 import { Projects } from "../projects";
 import { Parallax1 } from "../parallax1";
+import development from "../../../../assets/development.png";
+import developmentweb from "../../../../assets/developmentweb.jpg";
 export const Home = () => {
   const { theme }: any = useContext(ThemeContext);
 
@@ -15,7 +17,7 @@ export const Home = () => {
       <Headers />
       <div className="logoDiv">
         <div className="logImg">
-          <img src="../../../../assets/development.png" alt="" />
+          <img src={`${development}`} alt="" />
         </div>
         <div className="logName">
           <p className="hey">hey</p>
@@ -33,7 +35,7 @@ export const Home = () => {
         <Parallax1 />
         <div className="aboutMe">
           <div className="b1">
-            <img src="../../../../assets/developmentweb.jpg" alt="" />
+            <img src={`${developmentweb}`} alt="" />
           </div>
           <div className="b2">
             <h3>About me</h3>

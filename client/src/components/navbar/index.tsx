@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import "./styled.css";
-import { ThemeContext, themes } from "../../theme-context";
+import { ThemeContext } from "../../theme-context";
 
 export const NavBar = () => {
   const { theme }: any = useContext(ThemeContext);
@@ -8,7 +8,10 @@ export const NavBar = () => {
     <nav>
       <ul style={{ background: theme.background, color: theme.color }}>
         <li className="father">
-          <a href="../../../../assets/curriculum.pdf" target="_blank">
+          <a
+            href="https://www.canva.com/design/DAFxLz7yVt4/5O8eYzwjOEoBkL14Azok_Q/view?utm_content=DAFxLz7yVt4&utm_campaign=designshare&utm_medium=link&utm_source=editor"
+            target="_blank"
+          >
             Curriculum
           </a>
         </li>

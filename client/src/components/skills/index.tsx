@@ -1,17 +1,16 @@
 import React from "react";
 import { useState } from "react";
 import "./styled.css";
+import notebook from "../../../../assets/notebook.png";
+import creative from "../../../../assets/creative.png";
+import onoff from "../../../../assets/on-off.png";
+import disciplined from "../../../../assets/disciplined.png";
 
 export const Skills = () => {
   const [img, setimg] = useState<number>(0);
 
-  const imgUrls = [
-    "../../../../assets/notebook.png",
-    "../../../../assets/creative.png",
-    "../../../../assets/on-off.png",
-    "../../../../assets/disciplined.png",
-  ];
-  const skills = ["comunicativo", "criativo", "pontual", "organizado"];
+  const imgUrls = [`${notebook}`, `${creative}`, `${onoff}`, `${disciplined}`];
+  const skills = ["communicative", "creative", "punctual", "organized"];
 
   function getFillterImg() {
     setimg((prevIndex) => (prevIndex + 1) % imgUrls.length);
