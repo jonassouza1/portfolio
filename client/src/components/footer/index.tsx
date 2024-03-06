@@ -1,10 +1,11 @@
 import React from "react";
+import digital from "../../../../assets/digital.jpg";
 import "./styled.css";
 export const Footer = () => {
   return (
     <footer>
       <div className="imgContat">
-        <img src="../../../../assets/digital.jpg" alt="" />
+        <img src={`${digital}`} alt="" />
       </div>
       <div className="infoContat">
         <a
