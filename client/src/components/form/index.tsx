@@ -56,7 +56,6 @@ export const Form = () => {
 
   return (
     <section className="container">
-      <h2 className="titleform">Access my portfolio by creating an account</h2>
       <div className="section">
         <form>
           <label htmlFor="name">Name</label>
