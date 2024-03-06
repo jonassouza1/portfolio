@@ -7,9 +7,10 @@
   position: relative;
 }
 
-h2 {
+.titleform {
   position: absolute;
-  top: 300px;
+  top: 200px;
+  font-weight: 400;
 }
 
 .section {

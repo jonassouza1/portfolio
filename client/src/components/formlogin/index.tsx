@@ -54,7 +54,7 @@ export const FormLogin = () => {
 
   return (
     <section className="container">
-      <h2>Log in with your account</h2>
+      <h2 className="titleform">Log in with your account</h2>
       <div className="section">
         <form>
           <h2>Login</h2>
