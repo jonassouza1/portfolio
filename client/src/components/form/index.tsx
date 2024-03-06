@@ -1,32 +1,27 @@
 import React, { useEffect, useState } from "react";
+import { useForm } from "react-hook-form";
 import "./styled.css";
 import { FormLogin } from "../formlogin";
 
-type Name = {
-  name?: string;
-  password?: string;
-};
-
 export const Form = () => {
-  const [state, setstate] = useState<Name>({
-    name: "",
-    password: "",
-  });
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm();
   const [validate, setValidate] = useState("");
   const [isLoggedIn, setIsLoggedIn] = useState(false);
 
   const baseUrl = "https://web-site-backend-orcin.vercel.app";
 
-  const onSubmit = (e: any) => {
-    e.preventDefault();
-    const data: any = { ...state };
-
+  const onSubmit = (data: any) => {
+    const datas: any = { ...data };
     const requestOptions = {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify(data),
+      body: JSON.stringify(datas),
     };
     const fetchdata = async () => {
       const body = requestOptions;
@@ -61,43 +56,43 @@ export const Form = () => {
 
   return (
     <section className="container">
+      <h2>Access my portfolio by creating an account</h2>
       <div className="section">
         <form>
           <label htmlFor="name">Name</label>
           <br />
           <input
             className="input"
-            minLength={8}
-            required={true}
             type="text"
             id="name"
             placeholder="enter the name"
-            onChange={(e) => setstate({ ...state, name: e.target.value })}
-            value={state.name}
+            {...register("name", { required: true, minLength: 8 })}
           />
-          {validate === "you registered successfully " ? (
-            <span className="greenn">{validate}</span>
-          ) : (
-            <span>{validate}</span>
+          {errors?.name?.type === "required" && <span>Name is required</span>}
+          {errors?.name?.type === "minLength" && (
+            <span>Name must have at least 8 characters.</span>
           )}
           <br />
           <label htmlFor="senha">Password</label>
           <br />
           <input
             className="input"
-            minLength={8}
-            required={true}
             type="password"
             id="senha"
             placeholder="enter the password"
-            onChange={(e) => setstate({ ...state, password: e.target.value })}
-            value={state.password}
+            {...register("password", { required: true, minLength: 8 })}
           />
+          {errors?.password?.type === "required" && (
+            <span>Password is required</span>
+          )}
+          {errors?.password?.type === "minLength" && (
+            <span>Password must have at least 8 characters.</span>
+          )}
           <br /> <br />
           <button
             className="btn"
             onClick={(e) => {
-              onSubmit(e);
+              handleSubmit(onSubmit)(e);
             }}
           >
             Register

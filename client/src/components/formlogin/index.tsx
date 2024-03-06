@@ -1,33 +1,34 @@
 import React, { useState, useEffect } from "react";
 import { Home } from "../home";
 import { Form } from "../form";
+import { useForm } from "react-hook-form";
 
 export const FormLogin = () => {
-  const [state, setstate] = useState({
-    name: "",
-    password: "",
-  });
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm();
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [validade, setValidate] = useState("");
 
   const baseUrl = "https://web-site-backend-orcin.vercel.app";
-  const onsubmit = (e: any) => {
-    e.preventDefault();
-    const data = { ...state };
+
+  const onsubmit = (data: any) => {
+    const datas = { ...data };
     try {
       const requestOptions = {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify(data),
+        body: JSON.stringify(datas),
       };
       const fetchdata = async () => {
         const body = requestOptions;
         const login = await fetch(`${baseUrl}/userlogin`, body);
         const getUser = await login.json();
         setValidate(getUser.message);
-        console.log(getUser);
         if (getUser.message === "Login Successfully ") {
           sessionStorage.setItem("Token", getUser.message);
           setIsLoggedIn(true);
@@ -39,9 +40,7 @@ export const FormLogin = () => {
     }
   };
   useEffect(() => {
-    //Verificar se há um token no localStorage quando o componente é montado
     const token = sessionStorage.getItem("Token");
-
     if (token) {
       setIsLoggedIn(true);
     }
@@ -52,41 +51,41 @@ export const FormLogin = () => {
   } else if (isLoggedIn) {
     return <Home />;
   }
+
   return (
     <section className="container">
+      <h2>Log in with your account</h2>
       <div className="section">
         <form>
           <h2>Login</h2>
           <br />
           <input
             className="input"
-            required={true}
             type="text"
             placeholder="Type Your Name"
             id="name"
-            onChange={(e) => {
-              setstate({ ...state, name: e.target.value });
-            }}
-            value={state.name}
+            {...register("name", { required: true })}
           />
+          {errors?.name?.type === "required" && (
+            <span>Name required to log in</span>
+          )}
           <br />
           <br />
           <input
             className="input"
-            required={true}
             type="password"
             placeholder="Type Your password"
             id="senha"
-            onChange={(e) => {
-              setstate({ ...state, password: e.target.value });
-            }}
-            value={state.password}
+            {...register("password", { required: true })}
           />
+          {errors?.password?.type === "required" && (
+            <span>Password required to log in</span>
+          )}
           <br /> <br />
           <button
             className="btn"
             onClick={(e) => {
-              onsubmit(e);
+              handleSubmit(onsubmit)(e);
             }}
           >
             Login
