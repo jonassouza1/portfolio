@@ -65,11 +65,11 @@ export const Form = () => {
             type="text"
             id="name"
             placeholder="enter the name"
-            {...register("name", { required: true, minLength: 8 })}
+            {...register("name", { required: true, minLength: 5 })}
           />
           {errors?.name?.type === "required" && <span>Name is required</span>}
           {errors?.name?.type === "minLength" && (
-            <span>Name must have at least 8 characters.</span>
+            <span>Name must have at least 5 characters.</span>
           )}
           <br />
           <label htmlFor="senha">Password</label>
