@@ -56,47 +56,50 @@ export const Form = () => {
 
   return (
     <section className="container">
-      <div className="section">
-        <form>
-          <label htmlFor="name">Name</label>
-          <br />
-          <input
-            className="input"
-            type="text"
-            id="name"
-            placeholder="enter the name"
-            {...register("name", { required: true, minLength: 5 })}
-          />
-          {errors?.name?.type === "required" && <span>Name is required</span>}
-          {errors?.name?.type === "minLength" && (
-            <span>Name must have at least 5 characters.</span>
-          )}
-          <br />
-          <label htmlFor="senha">Password</label>
-          <br />
-          <input
-            className="input"
-            type="password"
-            id="senha"
-            placeholder="enter the password"
-            {...register("password", { required: true, minLength: 8 })}
-          />
-          {errors?.password?.type === "required" && (
-            <span>Password is required</span>
-          )}
-          {errors?.password?.type === "minLength" && (
-            <span>Password must have at least 8 characters.</span>
-          )}
-          <br /> <br />
-          <button
-            className="btn"
-            onClick={(e) => {
-              handleSubmit(onSubmit)(e);
-            }}
-          >
-            Register
-          </button>
-        </form>
+      <div className="main">
+        <h2 className="title">Create an account to see my portfolio</h2>
+        <div className="section">
+          <form>
+            <label htmlFor="name">Name</label>
+            <br />
+            <input
+              className="input"
+              type="text"
+              id="name"
+              placeholder="enter the name"
+              {...register("name", { required: true, minLength: 5 })}
+            />
+            {errors?.name?.type === "required" && <span>Name is required</span>}
+            {errors?.name?.type === "minLength" && (
+              <span>Name must have at least 5 characters.</span>
+            )}
+            <br />
+            <label htmlFor="senha">Password</label>
+            <br />
+            <input
+              className="input"
+              type="password"
+              id="senha"
+              placeholder="enter the password"
+              {...register("password", { required: true, minLength: 8 })}
+            />
+            {errors?.password?.type === "required" && (
+              <span>Password is required</span>
+            )}
+            {errors?.password?.type === "minLength" && (
+              <span>Password must have at least 8 characters.</span>
+            )}
+            <br /> <br />
+            <button
+              className="btn"
+              onClick={(e) => {
+                handleSubmit(onSubmit)(e);
+              }}
+            >
+              Register
+            </button>
+          </form>
+        </div>
       </div>
     </section>
   );

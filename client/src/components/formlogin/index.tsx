@@ -54,42 +54,45 @@ export const FormLogin = () => {
 
   return (
     <section className="container">
-      <div className="section">
-        <form>
-          <h2>Login</h2>
-          <br />
-          <input
-            className="input"
-            type="text"
-            placeholder="Type Your Name"
-            id="name"
-            {...register("name", { required: true })}
-          />
-          {errors?.name?.type === "required" && (
-            <span>Name required to log in</span>
-          )}
-          <br />
-          <br />
-          <input
-            className="input"
-            type="password"
-            placeholder="Type Your password"
-            id="senha"
-            {...register("password", { required: true })}
-          />
-          {errors?.password?.type === "required" && (
-            <span>Password required to log in</span>
-          )}
-          <br /> <br />
-          <button
-            className="btn"
-            onClick={(e) => {
-              handleSubmit(onsubmit)(e);
-            }}
-          >
-            Login
-          </button>
-        </form>
+      <div className="main">
+        <h2 className="title">Log in to your account</h2>
+        <div className="section">
+          <form>
+            <h2>Login</h2>
+            <br />
+            <input
+              className="input"
+              type="text"
+              placeholder="Type Your Name"
+              id="name"
+              {...register("name", { required: true })}
+            />
+            {errors?.name?.type === "required" && (
+              <span>Name required to log in</span>
+            )}
+            <br />
+            <br />
+            <input
+              className="input"
+              type="password"
+              placeholder="Type Your password"
+              id="senha"
+              {...register("password", { required: true })}
+            />
+            {errors?.password?.type === "required" && (
+              <span>Password required to log in</span>
+            )}
+            <br /> <br />
+            <button
+              className="btn"
+              onClick={(e) => {
+                handleSubmit(onsubmit)(e);
+              }}
+            >
+              Login
+            </button>
+          </form>
+        </div>
       </div>
     </section>
   );
