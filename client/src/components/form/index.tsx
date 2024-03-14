@@ -81,13 +81,13 @@ export const Form = () => {
               type="password"
               id="senha"
               placeholder="enter the password"
-              {...register("password", { required: true, minLength: 8 })}
+              {...register("password", { required: true, minLength: 9 })}
             />
             {errors?.password?.type === "required" && (
               <span>Password is required</span>
             )}
             {errors?.password?.type === "minLength" && (
-              <span>Password must have at least 8 characters.</span>
+              <span>Password must have at least 9 characters.</span>
             )}
             <br /> <br />
             <button
