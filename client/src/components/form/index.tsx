@@ -61,7 +61,6 @@ export const Form = () => {
         <div className="section">
           <form>
             <label htmlFor="name">Name</label>
-            <br />
             <input
               className="input"
               type="text"
@@ -75,7 +74,6 @@ export const Form = () => {
             )}
             <br />
             <label htmlFor="senha">Password</label>
-            <br />
             <input
               className="input"
               type="password"
@@ -89,7 +87,7 @@ export const Form = () => {
             {errors?.password?.type === "minLength" && (
               <span>Password must have at least 9 characters.</span>
             )}
-            <br /> <br />
+            <br />
             <button
               className="btn"
               onClick={(e) => {
