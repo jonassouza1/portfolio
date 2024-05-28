@@ -5,7 +5,7 @@ import github from "../../../../assets/githubappimg.jpg";
 import thelast from "../../../../assets/thelast.png";
 import logo from "../../../../assets/logoE.png";
 import enterface from "../../../../assets/interface.jpg";
-import form from "../../../../assets/form.jpg";
+import leptop from "../../../../assets/leptop.jpg";
 
 export const Projects = () => {
   const [iframe, setiframe] = useState("");
@@ -59,12 +59,10 @@ export const Projects = () => {
           <div className="p1">
             <a
               onClick={() => {
-                setiframe(
-                  "https://jonassouza1.github.io/validation-form-design/",
-                );
+                setiframe("https://ecommerce-mu-steel.vercel.app/");
               }}
             >
-              <img src={`${form}`} alt="" />
+              <img src={`${leptop}`} alt="" />
             </a>
           </div>
         </div>
