@@ -1,11 +1,12 @@
 import React from "react";
-import { Form } from "./components/form";
+
 import { Provider } from "./theme-context";
 import "./styled.css";
+import { Home } from "./components/home";
 const App = () => {
   return (
     <Provider>
-      <Form />
+      <Home />
     </Provider>
   );
 };
