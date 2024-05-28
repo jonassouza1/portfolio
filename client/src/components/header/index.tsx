@@ -9,9 +9,6 @@ export const Headers = () => {
   return (
     <>
       <header>
-        <a className="home" href="#">
-          <img src={`${home}`} alt="" />
-        </a>
         <NavBar />
         <button
           onClick={() => {

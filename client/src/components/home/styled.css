@@ -242,6 +242,7 @@ p {
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
   }
 
+
   .b2 {
     display: flex;
     flex-direction: column;
@@ -254,4 +255,11 @@ p {
   }
 
 
+}
+
+@media (max-width:350px) {
+
+  .logoDiv {
+    z-index: 10;
+  }
 }
