@@ -66,6 +66,9 @@ export const Projects = () => {
             </a>
           </div>
         </div>
+        <a className="fullscreen" href={iframe} target="_blank">
+          View In Full Screen
+        </a>
         <div className="projectImg">
           <iframe src={iframe} />
         </div>

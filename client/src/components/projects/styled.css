@@ -49,6 +49,13 @@
   z-index: 1;
 }
 
+.fullscreen {
+  text-decoration: none;
+  font-size: 20px;
+  top: 0px;
+
+}
+
 .projectImg iframe {
   width: 100%;
   top: 0;
