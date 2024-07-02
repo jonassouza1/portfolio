@@ -11,6 +11,7 @@ export const Headers = () => {
       <header>
         <NavBar />
         <button
+          className="button"
           onClick={() => {
             setTheme(theme === themes.light ? themes.dark : themes.light);
           }}
