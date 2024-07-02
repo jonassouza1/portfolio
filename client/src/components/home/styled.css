@@ -47,27 +47,82 @@ section {
 .logName {
   display: flex;
   flex-direction: column;
-  align-items: center;
+
   justify-content: space-evenly;
   width: 510px;
-  height: 500px;
+  height: 400px
 }
 
-.hey {
-  font-size: 38px;
-}
 
 .title {
-  font-size: 62px;
+  font-size: 48px;
 }
 
 h2 {
-  font-size: 38px;
+  font-size: 35px;
 }
 
 p {
-  font-size: 25px;
+  font-size: 22px;
 }
+
+
+
+
+
+.animatedheader {
+  color: #ffffff;
+  text-align: center;
+}
+
+.animatedheader span {
+  font-size: 40px;
+  display: inline-block;
+  opacity: 0;
+  transform: translateY(-100px);
+  animation: dropIn 12s forwards infinite;
+  color: #c59337;
+}
+
+/* Animação */
+@keyframes dropIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+
+  20% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  90% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+}
+
+/* Atraso incremental */
+.animatedheader span:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.animatedheader span:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.animatedheader span:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+
+
+
 
 .aboutMe {
   display: flex;
@@ -95,6 +150,11 @@ p {
   padding: 0 15px;
   width: 38%;
   height: 400px;
+}
+
+.aboutMe .b2 h3 {
+  font-size: 38px;
+
 }
 
 .b1 img {
@@ -146,7 +206,7 @@ p {
     align-items: center;
     justify-content: space-evenly;
     max-width: 510px;
-    height: 500px;
+
   }
 
 
@@ -170,7 +230,7 @@ p {
     align-items: center;
     justify-content: space-evenly;
     width: 95%;
-    height: 500px;
+    height: 350px;
     text-align: center;
   }
 
@@ -207,11 +267,14 @@ p {
     height: 300px;
   }
 
+
 }
 
 @media (max-width:460px) {
 
-
+  .logName {
+    height: 500px;
+  }
 
   .logImg {
     display: flex;

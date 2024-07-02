@@ -20,14 +20,18 @@ export const Home = () => {
           <img src={`${development}`} alt="" />
         </div>
         <div className="logName">
-          <p className="hey">hey</p>
-          <h1 className="title">I´m Jonas Souza</h1>
-          <h2>Fullstack Web Developer</h2>
+          <div className="animatedheader">
+            <span>O</span>
+            <span>L</span>
+            <span>Á</span>
+          </div>
+          <h1 className="title">sou Jonas Souza</h1>
+          <h2>Desenvolvedor Web FullStack</h2>
           <p>
-            With lines of code as brushes, I design the future of the web.
-            Frontend that delights, backend that surprises. Transforming ideas
-            into experiences, I am the digital architect who builds bridges
-            between dreams and reality.
+            Com linhas de código como pincéis, eu desenho o futuro da web.
+            Frontend que encanta, backend que surpreende. Transformando ideias
+            em experiências, sou o arquiteto digital que constrói pontes entre
+            sonhos e realidade.
           </p>
         </div>
       </div>
@@ -38,13 +42,12 @@ export const Home = () => {
             <img src={`${developmentweb}`} alt="" />
           </div>
           <div className="b2">
-            <h3>About me</h3>
+            <h3>Sobre mim</h3>
             <p>
-              I embarked on this journey in October 2022, converting ideas into
-              digital reality. From code conception to final product, I build
-              experiences that stand out. My trajectory is marked by constant
-              evolution, guided by the incessant search for new challenges and
-              innovations.
+              Sou um Desenvolvedor web focado em transformar ideias em soluções
+              digitais eficazes, alinhadas às regras de negócio e à satisfação
+              do cliente. Da concepção ao produto final, crio experiências que
+              se destacam e estou sempre em busca de novos desafios e inovações.
             </p>
           </div>
         </div>

@@ -11,7 +11,7 @@ export const Projects = () => {
   const [iframe, setiframe] = useState("");
   return (
     <>
-      <h2 style={{ zIndex: "1", marginTop: "200px" }}>Projects</h2>
+      <h2 style={{ zIndex: "1", marginTop: "200px" }}>Projetos</h2>
       <div className="projects">
         <div className="projectsDivs">
           <div className="p1">
@@ -67,7 +67,7 @@ export const Projects = () => {
           </div>
         </div>
         <a className="fullscreen" href={iframe} target="_blank">
-          View In Full Screen
+          Ver em tela cheia
         </a>
         <div className="projectImg">
           <iframe src={iframe} />

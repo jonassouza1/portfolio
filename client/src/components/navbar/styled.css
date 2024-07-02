@@ -51,6 +51,7 @@ li a:hover,
   display: block;
   position: absolute;
 
+
 }
 
 .dropdown .children {
@@ -59,11 +60,8 @@ li a:hover,
 
 }
 
-@media (max-width:460px) {
+@media (max-width:900px) {
   ul {
-    display: flex;
-    flex-direction: column;
-    list-style: none;
-
+    display: none;
   }
 }

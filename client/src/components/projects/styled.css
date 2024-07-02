@@ -25,14 +25,22 @@
   border-radius: 100%;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
   z-index: 1;
+  transition: 0.5s;
 }
 
 .p1 a {
   display: flex;
   width: 100%;
   height: 100%;
+}
+
+.p1:hover {
+  padding: 3px;
+  opacity: 0.9;
+  box-shadow: 10px 10px 20px rebeccapurple;
 
 }
+
 
 .p1 a img {
   width: 100%;
@@ -53,7 +61,12 @@
   text-decoration: none;
   font-size: 20px;
   top: 0px;
+  transition: 0.4s;
 
+}
+
+.fullscreen:hover {
+  box-shadow: 10px 10px 20px rebeccapurple;
 }
 
 .projectImg iframe {

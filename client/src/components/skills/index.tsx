@@ -10,7 +10,7 @@ export const Skills = () => {
   const [img, setimg] = useState<number>(0);
 
   const imgUrls = [`${notebook}`, `${creative}`, `${onoff}`, `${disciplined}`];
-  const skills = ["communicative", "creative", "punctual", "organized"];
+  const skills = ["comunicativo", "criativo", "pontual", "organizado"];
 
   function getFillterImg() {
     setimg((prevIndex) => (prevIndex + 1) % imgUrls.length);
@@ -18,7 +18,7 @@ export const Skills = () => {
 
   return (
     <div className="skills">
-      <h2>Skills</h2>
+      <h2>Habilidades</h2>
       <h3>{skills[img]}</h3>
       <div className="skillsDiv">
         <button onClick={() => getFillterImg()}>
