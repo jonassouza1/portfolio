@@ -22,7 +22,7 @@ export const Projects = () => {
                 );
               }}
             >
-              <img src={`${github}`} alt="" />
+              <img src={`${github}`} alt="APP baseado no GitHub" />
             </a>
           </div>
           <div className="p1">
@@ -33,7 +33,7 @@ export const Projects = () => {
                 );
               }}
             >
-              <img src={`${thelast}`} alt="" />
+              <img src={`${thelast}`} alt="imagem do the last of us" />
             </a>
           </div>
           <div className="p1">
@@ -42,18 +42,18 @@ export const Projects = () => {
                 setiframe("https://jonassouza1.github.io/company-page/");
               }}
             >
-              <img src={`${logo}`} alt="" />
+              <img src={`${logo}`} alt="logo do site" />
             </a>
           </div>
           <div className="p1">
             <a
               onClick={() => {
                 setiframe(
-                  "https://advanced-react-typescript-project-ds5n3f30x.vercel.app/",
+                  "https://jonassouza1.github.io/advanced-react-typescript-project",
                 );
               }}
             >
-              <img src={`${enterface}`} alt="" />
+              <img src={`${enterface}`} alt="interface" />
             </a>
           </div>
           <div className="p1">
@@ -62,7 +62,7 @@ export const Projects = () => {
                 setiframe("https://ecommerce-mu-steel.vercel.app/");
               }}
             >
-              <img src={`${leptop}`} alt="" />
+              <img src={`${leptop}`} alt="leotop" />
             </a>
           </div>
         </div>
