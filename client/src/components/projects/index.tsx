@@ -59,7 +59,7 @@ export const Projects = () => {
           <div className="p1">
             <a
               onClick={() => {
-                setiframe("https://ecommerce-mu-steel.vercel.app/");
+                setiframe("https://ecommerce-ivory-ten.vercel.app/");
               }}
             >
               <img src={`${leptop}`} alt="leotop" />
