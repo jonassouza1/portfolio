@@ -22,7 +22,7 @@ const Project2 = () => {
     "https://jonassouza1.github.io/validation-form-design/",
     "https://jonassouza1.github.io/carousel-slider/",
     "https://jonassouza1.github.io/ecommercejs-frontend-site/",
-    "organizado",
+    "https://react-avancado-pokemons.vercel.app/",
   ];
 
   function getFillterImg() {
