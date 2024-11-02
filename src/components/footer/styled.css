@@ -1,0 +1,92 @@
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 400px;
+  gap: 20px;
+  width: 1300px;
+  height: 800px;
+  z-index: 10;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.imgContat {
+  display: flex;
+  width: 350px;
+  height: 356px;
+  box-shadow: 10px 10px 20px rebeccapurple;
+}
+
+.imgContat img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.infoContat {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 400px;
+  height: 200px;
+
+}
+
+.infoContat a i {
+  font-size: 100px;
+}
+
+
+@media (max-width:1300px) {
+
+  footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 400px;
+    gap: 20px;
+    max-width: 90%;
+    height: 800px;
+    z-index: 10;
+  }
+
+}
+
+@media (max-width:700px) {
+  footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 400px;
+    gap: 20px;
+    max-width: 90%;
+    height: 800px;
+    z-index: 10;
+  }
+
+
+}
+
+@media (max-width:460px) {
+  .imgContat {
+    display: flex;
+    width: 95%;
+    height: 356px;
+
+  }
+
+  .infoContat {
+    display: flex;
+    width: 95%;
+    height: 464px;
+
+  }
+
+  .infoContat a i {
+    font-size: 70px;
+  }
+
+}

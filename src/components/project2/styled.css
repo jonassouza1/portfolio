@@ -1,0 +1,121 @@
+.containerTv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 733px;
+  z-index: 1;
+  position: relative;
+
+}
+
+.sectionTv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 600px;
+  height: 600px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+
+}
+
+.sectionTv h3 {
+  position: absolute;
+  width: 200px;
+  font-size: 15px;
+  bottom: 290px;
+  margin-left: 30px;
+  background-color: aliceblue;
+  color: rgb(182, 0, 0);
+
+}
+
+.sectionTv a {
+  display: flex;
+  width: 270px;
+  height: 185px;
+  margin-top: 22px;
+  margin-left: 10px;
+}
+
+.sectionTv img {
+  width: 100%;
+  border-radius: 20px;
+}
+
+.divButtonTv {
+  display: flex;
+  justify-content: space-around;
+  width: 70px;
+  margin-top: 45px;
+  margin-left: 55px;
+
+
+}
+
+.divButtonTv button {
+  cursor: pointer;
+  width: 15px;
+  height: 20px;
+  margin-left: 10px;
+
+}
+
+@media (max-width:600px) {
+
+  .sectionTv {
+    width: 100vw;
+  }
+}
+
+@media (max-width:290px) {
+
+  .sectionTv {
+
+    background-size: contain;
+
+  }
+
+  .sectionTv h3 {
+    width: 100px;
+    font-size: 8px;
+    bottom: 320px;
+    margin-left: 10px;
+
+  }
+
+  .sectionTv a {
+    width: 130px;
+    height: 80px;
+    margin-top: 5px;
+  }
+
+  .divButtonTv {
+    width: 35px;
+    margin-top: 25px;
+    margin-left: 15px;
+  }
+
+  .divButtonTv button {
+    height: 2px;
+    width: 2px;
+  }
+}
+
+@media (max-width:260px) {
+
+  .sectionTv a {
+    width: 120px;
+    height: 80px;
+    margin-top: 0px;
+  }
+
+  .divButtonTv {
+    margin-top: 10px;
+  }
+}

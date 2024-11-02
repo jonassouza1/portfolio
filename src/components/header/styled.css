@@ -1,0 +1,39 @@
+header {
+  display: flex;
+  width: 100%;
+  height: 100px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+button {
+  background: none;
+  border: none;
+}
+
+img {
+  width: 50px;
+}
+
+@media (max-width:900px) {
+
+  header {
+    position: relative;
+  }
+
+  .button {
+    position: absolute;
+    left: 10px;
+  }
+}
+
+@media (max-width:460px) {
+  button {
+    width: 100px;
+  }
+}
