@@ -20,6 +20,35 @@ img {
   width: 50px;
 }
 
+.divVendas{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content:space-around;
+  position: fixed;
+  top:10%;
+  width: 100px;
+  text-align: center;
+  padding: 2px;
+  background-color: rgb(218, 218, 218);
+  border-radius: 10px;
+  z-index: 100000;
+}
+.divVendas a{
+  width: 100px;
+  height: 80px;
+}
+.divVendas a:hover{
+ cursor: pointer;
+}
+.divVendas img{
+  width: 100%;
+}
+.divVendas p{
+  font-size: 12px;
+  color: blueviolet;
+}
+
 @media (max-width:900px) {
 
   header {
