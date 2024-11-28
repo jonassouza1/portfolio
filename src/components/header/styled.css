@@ -5,6 +5,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 30px;
+ 
 }
 
 button:hover {
@@ -23,30 +24,30 @@ img {
 .divVendas{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content:space-around;
-  position: fixed;
-  top:10%;
+  justify-content: center;
+  position: absolute;
+  top:2px;
+  left: 40%;
   width: 100px;
   text-align: center;
   padding: 2px;
-  background-color: rgb(218, 218, 218);
   border-radius: 10px;
   z-index: 100000;
+  
 }
 .divVendas a{
-  width: 100px;
-  height: 80px;
+  text-decoration: none;
+  color: rgb(141, 83, 192);
 }
 .divVendas a:hover{
  cursor: pointer;
 }
 .divVendas img{
-  width: 100%;
+  width:100%;
 }
 .divVendas p{
+  margin-top:-15px;
   font-size: 12px;
-  color: blueviolet;
 }
 
 @media (max-width:900px) {
@@ -62,6 +63,15 @@ img {
 }
 
 @media (max-width:460px) {
+  .divVendas{
+    width: 80px;
+  }
+  .divVendas img{
+    width: 80px;
+  }
+  .divVendas p{
+    font-size: 11px;
+  }
   button {
     width: 100px;
   }

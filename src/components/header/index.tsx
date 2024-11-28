@@ -9,7 +9,7 @@ export const Headers = () => {
   return (
     <>
       <header>
-        <NavBar />
+        
         <button
           className="button"
           onClick={() => {
@@ -22,8 +22,13 @@ export const Headers = () => {
           <a href="https://mercadolivre.com/sec/2CCwo1W" target="_blank" rel="noopener noreferrer">
           <img src={`${ebookSales}`} alt="notebook" />
           </a>
-          <p>Clique e garanta já o Guia definitivo sobre JavaScript avançado!</p>
+          <a href="https://mercadolivre.com/sec/2CCwo1W" target="_blank" rel="noopener noreferrer">
+          <p>
+          Clique e garanta já o Guia definitivo sobre JavaScript avançado!
+          </p>
+          </a>
         </div>
+        <NavBar />
       </header>
     </>
   );
