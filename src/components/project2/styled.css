@@ -13,7 +13,13 @@
   font-size: 25px;
   font-weight: 400;
 }
-
+.containerTv p{
+  position: absolute;
+  width: 200px;
+  right: 80px;
+  font-size: 13px;
+  right: 20px;
+}
 .sectionTv {
   display: flex;
   flex-direction: column;
@@ -68,6 +74,16 @@
   height: 20px;
   margin-left: 10px;
 
+}
+@media (max-width:830px) {
+  .containerTv p{
+    position:static;
+   max-width: 250px;
+   margin-top: 50px;
+    font-size: 13px;
+    
+  }
+  
 }
 
 @media (max-width:600px) {
