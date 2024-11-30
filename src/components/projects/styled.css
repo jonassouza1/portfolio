@@ -1,51 +1,49 @@
-.projects {
-  display: flex;
-  width: 1011px;
-  height: 1300px;
-  align-items: center;
-  justify-content: space-between;
-  z-index: 1;
-}
-
-.projectsDivs {
+.divProjects {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  width: 1011px;
   align-items: center;
-  width: 233px;
-  height: 1200px;
+  justify-content: center;
   z-index: 1;
 }
+.projects{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  height: 1300px;
+  text-align: center;
+}
+.projects h2{
+  font-size: 30px;
+  font-weight: 400;
+}
+.projects p{
+  font-size: 12px;
+}
+.carousel{
+  display: flex;
+  width: 95%;
+  height: 300px;
 
-.p1 {
-  cursor: pointer;
+}
+.carousel a{
   display: flex;
   width: 200px;
-  height: 200px;
-  border-radius: 100%;
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
-  z-index: 1;
-  transition: 0.5s;
+  height: 250px;
 }
-
-.p1 a {
-  display: flex;
+.carousel img {
   width: 100%;
-  height: 100%;
+  padding-right: 2px;
+  border-radius: 10px;
+  object-fit: cover;
+  
+}
+.swiperSlides a{
+  cursor: pointer;
 }
 
-.p1:hover {
-  padding: 3px;
-  opacity: 0.9;
-  box-shadow: 10px 10px 20px rebeccapurple;
-
-}
-
-
-.p1 a img {
-  width: 100%;
-  border-radius: 100%;
-}
 
 .projectImg {
   display: flex;
@@ -56,11 +54,27 @@
   overflow: hidden;
   z-index: 1;
 }
+.divFullscren{
+  display: flex;
+  flex-direction: column;
+  height: 120px;
+  justify-content: space-around;
+  align-items:center;
+  margin-top: -40px;
+}
+.arrow {
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 20px solid #fcfcfc;
+  animation: moveArrow 2s infinite;
+}
 
 .fullscreen {
   text-decoration: none;
-  font-size: 20px;
-  top: 0px;
+  font-size: 14px;
+  
   transition: 0.4s;
 
 }
@@ -80,30 +94,27 @@
   border-radius: 10px;
 }
 
-@media (max-width:1300px) {
 
-  .projects {
-    display: flex;
-    max-width: 90%;
-    height: 1300px;
-    align-items: center;
-    justify-content: space-between;
-    z-index: 1;
+@keyframes moveArrow {
+  0% {
+      transform: translateY(0);
+  }
+
+  50% {
+      transform: translateY(20px);
+  }
+
+  100% {
+      transform: translateY(0);
   }
 }
 
-
 @media (max-width:1000px) {
 
-  .projects {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+  .divProjects {
+    
     max-width: 90%;
-    height: 1700px;
-    align-items: center;
-    justify-content: space-around;
-    z-index: 1;
+  
 
   }
 
@@ -115,5 +126,22 @@
     box-shadow: 10px 10px 20px rebeccapurple;
     overflow: hidden;
     z-index: 1;
+  }
+}
+
+@media (max-width:730px) {
+  .carousel{
+    max-width:450px ;
+  }
+.swiperSlides {
+  display: flex;
+  justify-content: center;
+  
+}
+}
+
+@media (max-width:280px) {
+  .projects{
+    margin-top: 100px;
   }
 }

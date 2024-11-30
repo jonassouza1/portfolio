@@ -1,78 +1,90 @@
 import React from "react";
-import { useState } from "react";
+import { useState,useEffect } from "react";
 import "./styled.css";
 import github from "@/assets/githubappimg.jpg";
 import thelast from "@/assets/thelast.png";
 import logo from "@/assets/logoE.png";
 import enterface from "@/assets/interface.jpg";
 import leptop from "@/assets/leptop.jpg";
+import {Swiper, SwiperSlide} from "swiper/react";
+
+
 
 export const Projects = () => {
   const [iframe, setiframe] = useState("");
+  const [count, setCount] = useState<number>(4);
+  const images = [
+    { id: "1", image: `${github}`, iframe: 'https://jonassouza1.github.io/projeto-inicial-fetch-github-api/' },
+    { id: "2", image: `${thelast}`, iframe: 'https://jonassouza1.github.io/projeto-the-last-of-us/'},
+    { id: "3", image: `${logo}`, iframe: 'https://jonassouza1.github.io/company-page/'},
+    { id: "4", image: `${enterface}`, iframe: 'https://jonassouza1.github.io/advanced-react-typescript-project' },
+    { id: "5", image: `${leptop}`, iframe:'https://ecommerce-ivory-ten.vercel.app/' },
+  ];
+  useEffect(() => {
+    const handleResize = async () => {
+      if (window.innerWidth < 960) {
+        setCount(3);
+        if (window.innerWidth < 730) {
+          setCount(2);
+        }
+
+        if (window.innerWidth < 480) {
+          setCount(1);
+        }
+      } else {
+        setCount(4);
+      }
+    };
+    handleResize();
+
+    window.addEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   return (
-    <>
-      <h2 style={{ zIndex: "1", marginTop: "200px" }}>Projetos</h2>
-      <div className="projects">
-        <div className="projectsDivs">
-          <div className="p1">
-            <a
+    
+      <section className="divProjects">
+        <div className="projects">
+      <h2 >Projetos</h2>
+      <p>clique em um dos projetos para vê-lo na tela abaixo</p>
+       <div className="carousel">
+        <Swiper
+          slidesPerView={count}
+          pagination={{ clickable: true }}
+          navigation
+        >
+          {images.map((el) => (
+            <SwiperSlide className="swiperSlides" key={el.id}>
+               <a
               onClick={() => {
                 setiframe(
-                  "https://jonassouza1.github.io/projeto-inicial-fetch-github-api/",
+                  el.iframe
                 );
               }}
             >
-              <img src={`${github}`} alt="APP baseado no GitHub" />
+              <img src={el.image} alt="cliente" />
             </a>
-          </div>
-          <div className="p1">
-            <a
-              onClick={() => {
-                setiframe(
-                  "https://jonassouza1.github.io/projeto-the-last-of-us/",
-                );
-              }}
-            >
-              <img src={`${thelast}`} alt="imagem do the last of us" />
-            </a>
-          </div>
-          <div className="p1">
-            <a
-              onClick={() => {
-                setiframe("https://jonassouza1.github.io/company-page/");
-              }}
-            >
-              <img src={`${logo}`} alt="logo do site" />
-            </a>
-          </div>
-          <div className="p1">
-            <a
-              onClick={() => {
-                setiframe(
-                  "https://jonassouza1.github.io/advanced-react-typescript-project",
-                );
-              }}
-            >
-              <img src={`${enterface}`} alt="interface" />
-            </a>
-          </div>
-          <div className="p1">
-            <a
-              onClick={() => {
-                setiframe("https://ecommerce-ivory-ten.vercel.app/");
-              }}
-            >
-              <img src={`${leptop}`} alt="leotop" />
-            </a>
-          </div>
-        </div>
-        <a className="fullscreen" href={iframe} target="_blank">
-          Ver em tela cheia
-        </a>
+              
+            </SwiperSlide>
+          ))}
+        </Swiper>
+      
+      </div>
         <div className="projectImg">
           <iframe src={iframe} />
         </div>
-      </div>
-    </>
+        <div className="divFullscren">
+        <h4>| |</h4>
+        <div className='arrow'></div>
+        <a className="fullscreen" href={iframe} target="_blank">
+          Abrir projeto em outra aba
+        </a>
+        </div>
+        
+        </div>
+      </section>
+    
   );
 };

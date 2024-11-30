@@ -12,11 +12,9 @@ section {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
   width: 1305px;
   z-index: 1;
-
+  gap: 100px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -61,15 +59,15 @@ section {
 
 
 .title {
-  font-size: 48px;
+  font-size: 30px;
 }
 
 h2 {
-  font-size: 35px;
+  font-size: 25px;
 }
 
 p {
-  font-size: 22px;
+  font-size: 18px;
 }
 
 
@@ -82,7 +80,7 @@ p {
 }
 
 .animatedheader span {
-  font-size: 40px;
+  font-size: 30px;
   display: inline-block;
   opacity: 0;
   transform: translateY(-100px);
@@ -159,8 +157,13 @@ p {
 }
 
 .aboutMe .b2 h3 {
-  font-size: 38px;
+  font-size: 30px;
+  font-weight: 400;
+  margin-bottom: 40px;
 
+}
+.b2 p{
+  font-size: 16px;
 }
 
 .b1 img {
