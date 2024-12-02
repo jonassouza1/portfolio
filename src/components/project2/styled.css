@@ -7,6 +7,7 @@
   height: 733px;
   z-index: 1;
   position: relative;
+  text-align: center;
 
 }
 .containerTv h2{
@@ -16,9 +17,8 @@
 .containerTv p{
   position: absolute;
   width: 200px;
-  right: 80px;
   font-size: 13px;
-  right: 20px;
+  right: 400px;
 }
 .sectionTv {
   display: flex;
@@ -75,7 +75,7 @@
   margin-left: 10px;
 
 }
-@media (max-width:830px) {
+@media (max-width:1600px) {
   .containerTv p{
     position:static;
    max-width: 250px;
@@ -83,8 +83,9 @@
     font-size: 13px;
     
   }
-  
+
 }
+
 
 @media (max-width:600px) {
 

@@ -2,7 +2,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 400px;
+  margin-top: 80px;
   gap: 20px;
   width: 1300px;
   height: 800px;
@@ -17,7 +17,9 @@ footer {
   display: flex;
   width: 350px;
   height: 356px;
-  box-shadow: 10px 10px 20px rebeccapurple;
+  opacity: 0;
+  transition: all 1s ease;
+  transform: translateX(-100%);
 }
 
 .imgContat img {
@@ -31,7 +33,14 @@ footer {
   align-items: center;
   width: 400px;
   height: 200px;
+  opacity: 0;
+  transition: all 1s ease;
+  transform: translateX(100%);
 
+}
+.visible {
+  opacity: 1;
+  transform: translateX(0); /* Elas se movem para o centro */
 }
 
 .infoContat a i {
@@ -39,54 +48,46 @@ footer {
 }
 
 
-@media (max-width:1300px) {
-
+@media (max-width:1200px) {
   footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 400px;
-    gap: 20px;
-    max-width: 90%;
-    height: 800px;
-    z-index: 10;
-  }
-
-}
-
-@media (max-width:700px) {
-  footer {
-    display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 400px;
-    gap: 20px;
-    max-width: 90%;
-    height: 800px;
-    z-index: 10;
+    max-width: 95%;
   }
-
 
 }
 
-@media (max-width:460px) {
+
+@media (max-width:830px) {
+ 
   .imgContat {
-    display: flex;
-    width: 95%;
-    height: 356px;
-
+    width: 250px;
+    height: 300px;
   }
+.infoContat{
+  max-width: 300px;
 
-  .infoContat {
-    display: flex;
-    width: 95%;
-    height: 464px;
+}
+ 
 
+}
+@media (max-width:660px) {
+
+  .imgContat {
+    width: 200px;
+    height: 250px;
+    transform: translateY(-100%);
   }
+.infoContat{
+  max-width: 240px;
+  transform: translateY(100%);
+}
+.infoContat a i{
+  font-size: 35px;
+}
 
-  .infoContat a i {
-    font-size: 70px;
+  .visible {
+    opacity: 1;
+    transform: translateY(0); /* Se movem para o centro */
   }
 
 }
