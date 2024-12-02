@@ -15,10 +15,10 @@
   font-weight: 400;
 }
 .containerTv p{
-  position: absolute;
   width: 200px;
-  font-size: 13px;
-  right: 400px;
+   padding-top: 10px;
+  font-size: 14px;
+ 
 }
 .sectionTv {
   display: flex;
@@ -75,17 +75,6 @@
   margin-left: 10px;
 
 }
-@media (max-width:1600px) {
-  .containerTv p{
-    position:static;
-   max-width: 250px;
-   margin-top: 50px;
-    font-size: 13px;
-    
-  }
-
-}
-
 
 @media (max-width:600px) {
 

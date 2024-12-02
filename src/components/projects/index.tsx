@@ -6,7 +6,7 @@ import thelast from "@/assets/thelast.png";
 import logo from "@/assets/logoE.png";
 import enterface from "@/assets/interface.jpg";
 import leptop from "@/assets/leptop.jpg";
-import {Swiper, SwiperSlide} from "swiper/react";
+import {Swiper, SwiperSlide} from"swiper/react";
 
 
 
@@ -42,7 +42,6 @@ export const Projects = () => {
       window.removeEventListener("resize", handleResize);
     };
   }, []);
-
   return (
     
       <section className="divProjects">
