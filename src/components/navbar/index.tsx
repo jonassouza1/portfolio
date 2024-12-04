@@ -22,7 +22,7 @@ export const NavBar = () => {
           </a>
           <div className="dropdown">
             <a
-              href="https://github.com/jonassouza1/movieflix-api"
+              href="https://movieflix-api.vercel.app/docs"
               target="_blank"
             >
               API/Pg
