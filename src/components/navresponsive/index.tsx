@@ -27,7 +27,7 @@ const NavResponsive = () => {
           </a>
           <div className="dropdown1">
             <a
-              href="https://github.com/jonassouza1/movieflix-api"
+              href="https://movieflix-api.vercel.app/docs"
               target="_blank"
             >
               API/Pg
