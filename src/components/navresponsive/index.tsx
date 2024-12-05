@@ -33,7 +33,7 @@ const NavResponsive = () => {
               API/Pg
             </a>
             <a
-              href="https://github.com/jonassouza1/movieflix-api-v-orm"
+              href="https://movieflix-api-v-orm.vercel.app/docs/"
               target="_blank"
             >
               API/Prisma
