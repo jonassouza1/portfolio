@@ -7,6 +7,7 @@ footer {
   width: 1300px;
   height: 800px;
   z-index: 10;
+  overflow: hidden;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -50,28 +51,22 @@ footer {
 
 @media (max-width:1200px) {
   footer {
+    width: 100%;
     flex-direction: column;
-    max-width: 95%;
   }
-
 }
 
-
 @media (max-width:830px) {
- 
   .imgContat {
     width: 250px;
     height: 300px;
   }
 .infoContat{
   max-width: 300px;
-
-}
- 
+} 
 
 }
 @media (max-width:660px) {
-
   .imgContat {
     width: 200px;
     height: 250px;
@@ -84,7 +79,6 @@ footer {
 .infoContat a i{
   font-size: 35px;
 }
-
   .visible {
     opacity: 1;
     transform: translateY(0); /* Se movem para o centro */

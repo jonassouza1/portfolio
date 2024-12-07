@@ -24,7 +24,7 @@ export const Headers = () => {
           </a>
           <a href="https://mercadolivre.com/sec/2CCwo1W" target="_blank" rel="noopener noreferrer">
           <p>
-          Clique e garanta já o Guia definitivo sobre JavaScript avançado!
+          Guia definitivo - JavaScript avançado!
           </p>
           </a>
         </div>

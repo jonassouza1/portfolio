@@ -6,7 +6,7 @@ import dark from "@/assets/dark.png";
 export const themes = {
   light: {
     background: "#fdffff",
-    color: "#b2b4b6",
+    color: "#9178c0",
     img: `${light}`,
   },
   dark: {

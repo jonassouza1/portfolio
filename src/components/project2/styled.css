@@ -8,18 +8,18 @@
   z-index: 1;
   position: relative;
   text-align: center;
-
 }
 .containerTv h2{
-  font-size: 25px;
+  font-size: 30px;
   font-weight: 400;
 }
 .containerTv p{
   width: 200px;
    padding-top: 10px;
-  font-size: 14px;
+  font-size: 16px;
  
 }
+
 .sectionTv {
   display: flex;
   flex-direction: column;
@@ -38,7 +38,7 @@
   position: absolute;
   width: 200px;
   font-size: 15px;
-  bottom: 290px;
+  bottom: 250px;
   margin-left: 30px;
   background-color: aliceblue;
   color: rgb(182, 0, 0);
@@ -94,7 +94,7 @@
   .sectionTv h3 {
     width: 100px;
     font-size: 8px;
-    bottom: 320px;
+    bottom: 280px;
     margin-left: 10px;
 
   }

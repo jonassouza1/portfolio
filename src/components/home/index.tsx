@@ -8,6 +8,8 @@ import Projects2 from "@/components/project2";
 import { Projects } from "@/components/projects";
 import development from "@/assets/development.png";
 import developmentweb from "@/assets/developmentweb.jpg";
+import coffe from "@/assets/coffe.gif";
+
 const Home = () => {
   const { theme }: any = useContext(ThemeContext);
 
@@ -16,6 +18,9 @@ const Home = () => {
       <Headers />
       <div className="logoDiv">
         <div className="logImg">
+          <div className="divCoffe">
+          <img src={`${coffe}`} alt="coffe" />
+          </div>
           <img src={`${development}`} alt="notebook" />
         </div>
         <div className="logName">
@@ -37,12 +42,12 @@ const Home = () => {
       <section style={{ backgroundImage: `url(${imageDev})` }}>
         <div className="aboutMe">
           <div className="b1">
-            <img src={`${developmentweb}`} alt="" />
+            <img src={`${developmentweb}`} alt="desk" />
           </div>
           <div className="b2">
             <h3>Sobre mim</h3>
             <p>
-              Sou uma pessoa que aprende pelo prazer de entender como hardware e
+              aprendo pelo prazer de entender como hardware e
               software funcionam em um nível mais profundo. Meu foco está nas
               fundações da computação, buscando compreender algoritmos e
               princípios essenciais, sempre movido pela curiosidade e pelo

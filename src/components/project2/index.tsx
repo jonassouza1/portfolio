@@ -35,7 +35,7 @@ const Project2 = () => {
   return (
     <div className="containerTv">
       <h2>Mais Projetos</h2>
-      <p>Use as setas da TV para escolher o projeto e clique na tela para abri-lo.</p>
+      <p>Use as setas da TV para passar os projetos e clique na tela para abri-lo.</p>
       <div className="sectionTv" style={{ backgroundImage: `url(${tv})` }}>
         <a href={project[url]} target="_blank" rel="noopener noreferrer">
           <img src={imgUrls[img]} alt={`imagens ${img + 1}`} />
