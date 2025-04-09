@@ -2,14 +2,13 @@ import React, { useContext } from "react";
 import { NavBar } from "../navbar";
 import "./styled.css";
 import { ThemeContext, themes } from "@/theme-context/index";
-import ebookSales from "@/assets/vendasEbook.png"
+import ebookSales from "@/assets/vendasEbook.png";
 export const Headers = () => {
   const { theme, setTheme }: any = useContext(ThemeContext);
 
   return (
     <>
       <header>
-        
         <button
           className="button"
           onClick={() => {
@@ -19,13 +18,19 @@ export const Headers = () => {
           <img src={`${theme.img}`} />
         </button>
         <div className="divVendas">
-          <a href="https://mercadolivre.com/sec/2CCwo1W" target="_blank" rel="noopener noreferrer">
-          <img src={`${ebookSales}`} alt="notebook" />
+          <a
+            href="https://mercadolivre.com/sec/2ZL9Sn3"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src={`${ebookSales}`} alt="ebook" />
           </a>
-          <a href="https://mercadolivre.com/sec/2CCwo1W" target="_blank" rel="noopener noreferrer">
-          <p>
-          Guia definitivo - JavaScript avançado!
-          </p>
+          <a
+            href="https://mercadolivre.com/sec/2ZL9Sn3"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <p>Guia definitivo - JavaScript avançado!</p>
           </a>
         </div>
         <NavBar />
