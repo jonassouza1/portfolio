@@ -10,7 +10,7 @@ export const NavBar = () => {
       <ul style={{ background: theme.background, color: theme.color }}>
         <li className="father">
           <a
-            href="https://www.canva.com/design/DAFxLz7yVt4/5O8eYzwjOEoBkL14Azok_Q/view?utm_content=DAFxLz7yVt4&utm_campaign=designshare&utm_medium=link&utm_source=editor"
+            href="https://www.canva.com/design/DAGlCCGBrds/LUgtz-IHd5qgQ7lKsi37OQ/edit?utm_content=DAGlCCGBrds&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
             target="_blank"
           >
             Curriculo

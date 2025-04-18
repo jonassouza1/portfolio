@@ -1,11 +1,11 @@
 header {
   display: flex;
-  width: 100%;
+  width: 100vw;
   height: 100px;
   justify-content: space-between;
   align-items: center;
-  padding: 30px;
- 
+  padding: 30px 20px;
+  border-bottom: 1px solid #7b7d86;
 }
 
 button:hover {
@@ -13,66 +13,51 @@ button:hover {
 }
 
 button {
+  display: inline;
+  border-radius: 100%;
+  border-color: beige;
   background: none;
-  border: none;
 }
 
-img {
+button img {
   width: 50px;
 }
-
-.divVendas{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  position: absolute;
-  top:2px;
-  left: 40%;
+.services {
   width: 100px;
-  text-align: center;
-  padding: 2px;
-  border-radius: 10px;
-  z-index: 100000;
-  
 }
-.divVendas a{
+.services a {
+  display: inline-block;
+  padding: 10px 20px;
+
+  background: linear-gradient(135deg, #4e54c8, #8f94fb);
+  color: white;
   text-decoration: none;
-  color: rgb(141, 83, 192);
-}
-.divVendas a:hover{
- cursor: pointer;
-}
-.divVendas img{
-  width:100%;
-}
-.divVendas p{
-  margin-top:-15px;
-  font-size: 11px;
+  font-weight: 600;
+  font-family: sans-serif;
+  border-radius: 12px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  text-align: center;
 }
 
-@media (max-width:900px) {
+.services a:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+  background: linear-gradient(135deg, #3f47cc, #6d73f8);
+}
 
+@media (max-width: 460px) {
   header {
+    height: 150px;
     position: relative;
   }
-
-  .button {
+  .services {
     position: absolute;
-    left: 10px;
+    top: 5px;
+    right: 30%;
   }
-}
-
-@media (max-width:460px) {
-  .divVendas{
-    width: 80px;
-  }
-  .divVendas img{
-    width: 80px;
-  }
-  .divVendas p{
-    font-size: 11px;
-  }
-  button {
-    width: 100px;
+  .services a {
+    font-size: 15px;
+    padding: 8px 12px;
   }
 }

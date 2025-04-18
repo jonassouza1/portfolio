@@ -19,7 +19,7 @@ const Home = () => {
       <div className="logoDiv">
         <div className="logImg">
           <div className="divCoffe">
-          <img src={`${coffe}`} alt="coffe" />
+            <img src={`${coffe}`} alt="coffe" />
           </div>
           <img src={`${development}`} alt="notebook" />
         </div>
@@ -42,16 +42,25 @@ const Home = () => {
       <section style={{ backgroundImage: `url(${imageDev})` }}>
         <div className="aboutMe">
           <div className="b1">
+            <a
+              className="textVenda"
+              href="https://mercadolivre.com/sec/2ZL9Sn3"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <p>Guia definitivo - JavaScript</p>
+            </a>
+
             <img src={`${developmentweb}`} alt="desk" />
           </div>
           <div className="b2">
             <h3>Sobre mim</h3>
             <p>
-              aprendo pelo prazer de entender como hardware e
-              software funcionam em um nível mais profundo. Meu foco está nas
-              fundações da computação, buscando compreender algoritmos e
-              princípios essenciais, sempre movido pela curiosidade e pelo
-              desejo de resolver os desafios que surgem ao longo do caminho.
+              aprendo pelo prazer de entender como hardware e software funcionam
+              em um nível mais profundo. Meu foco está nas fundações da
+              computação, buscando compreender algoritmos e princípios
+              essenciais, sempre movido pela curiosidade e pelo desejo de
+              resolver os desafios que surgem ao longo do caminho.
             </p>
           </div>
         </div>

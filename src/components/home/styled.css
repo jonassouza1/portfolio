@@ -6,7 +6,6 @@ main {
   width: 100vw;
 }
 
-
 section {
   display: flex;
   flex-direction: column;
@@ -19,9 +18,7 @@ section {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-
 }
-
 
 .logoDiv {
   display: flex;
@@ -44,14 +41,13 @@ section {
 .logImg img {
   width: 100%;
 }
-.divCoffe{
+.divCoffe {
   display: flex;
   position: absolute;
-  left: 45px;  
+  left: 45px;
   top: 110px;
-
 }
-.divCoffe img{
+.divCoffe img {
   width: 100%;
   transform: scaleX(-1);
 }
@@ -61,7 +57,6 @@ section {
   flex-direction: column;
   width: 500px;
 }
-
 
 .title {
   font-size: 30px;
@@ -87,7 +82,7 @@ p {
   display: inline-block;
   opacity: 0;
   transform: translateY(-100px);
-  animation: dropIn 12s forwards ;
+  animation: dropIn 12s forwards;
   color: #c59337;
 }
 
@@ -141,6 +136,7 @@ p {
   display: flex;
   width: 400px;
   height: 438px;
+  position: relative;
 }
 
 .b2 {
@@ -157,9 +153,8 @@ p {
 .aboutMe .b2 h3 {
   font-size: 30px;
   font-weight: 400;
-
 }
-.b2 p{
+.b2 p {
   font-size: 17px;
 }
 
@@ -168,10 +163,33 @@ p {
   border-radius: 5px;
 }
 
+.textVenda {
+  position: absolute;
+  top: 46%;
+  left: 33%;
+  width: 53px;
+  overflow-wrap: break-word;
+  text-align: center;
+  text-decoration: none;
+  color: rgb(66, 56, 112);
+  z-index: 100000;
+  transition: 0.4s;
+}
 
-@media (max-width:1300px) {
+.textVenda:hover {
+  cursor: pointer;
+  color: #c59337;
+}
+
+.textVenda p {
+  font-weight: 600;
+  font-size: 10px;
+  padding: 0 2px;
+}
+
+@media (max-width: 1300px) {
   section {
-    width: 100%; 
+    width: 100%;
   }
 
   .logoDiv {
@@ -187,29 +205,26 @@ p {
     height: 400px;
   }
 
-
   .logName {
     display: flex;
     align-items: center;
     max-width: 490px;
     height: 500px;
   }
- 
+
   .aboutMe {
     display: flex;
     flex-direction: column;
     max-width: 90%;
     height: 869px;
   }
-  .divCoffe{
+  .divCoffe {
     top: 60px;
-  
   }
-
 }
 
-@media (max-width:700px) {
-  .logName { 
+@media (max-width: 700px) {
+  .logName {
     width: 95%;
     height: 350px;
     text-align: center;
@@ -227,14 +242,12 @@ p {
     width: 90%;
     height: 300px;
   }
-  .divCoffe{
+  .divCoffe {
     top: 80px;
   }
-  
 }
 
-@media (max-width:460px) {
-
+@media (max-width: 460px) {
   .logName {
     height: 500px;
   }
@@ -243,12 +256,18 @@ p {
     width: 95%;
     height: 300px;
   }
-  .divCoffe{
+  .divCoffe {
     top: 70px;
     width: 80px;
   }
- 
-
+  .textVenda {
+    top: 45%;
+    left: 32%;
+    width: 50px;
+  }
+  .textVenda p {
+    font-size: 8px;
+  }
   .aboutMe {
     display: flex;
     flex-direction: column;
@@ -261,7 +280,6 @@ p {
     height: 338px;
   }
 
-
   .b2 {
     display: flex;
     justify-content: center;
@@ -272,31 +290,39 @@ p {
   }
 }
 
-@media (max-width:420px) {
-
-  .divCoffe{
+@media (max-width: 420px) {
+  .divCoffe {
     top: 80px;
     width: 70px;
   }
 }
-@media (max-width:370px) {
-  .divCoffe{
+@media (max-width: 370px) {
+  .b1 {
+    width: 230px;
+  }
+  .textVenda {
+    width: 35px;
+  }
+
+  .textVenda p {
+    font-size: 8px;
+    padding: 2px 0;
+  }
+  .divCoffe {
     left: 30px;
- 
   }
 }
 
-@media (max-width:290px) {
-  .divCoffe{
+@media (max-width: 290px) {
+  .divCoffe {
     top: 90px;
     left: 20px;
     width: 60px;
   }
 }
 
-@media (max-width:220px) {
-  .divCoffe{
+@media (max-width: 220px) {
+  .divCoffe {
     left: 10px;
   }
-
 }

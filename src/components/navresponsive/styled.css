@@ -1,8 +1,7 @@
 .container {
   display: none;
   justify-content: flex-end;
-  width: 120px;
-
+  width: 80px;
 }
 
 .inputHamburger {
@@ -63,31 +62,28 @@
 .father1:hover .dropdown1 {
   display: block;
   position: absolute;
-  bottom: -50px;
-
+  bottom: -40px;
 }
 
 .dropdown1 .children1 {
   display: block;
-
-
 }
 
-input:checked~label .hamburger {
+input:checked ~ label .hamburger {
   transform: rotate(45deg);
 }
 
-input:checked~label .hamburger::before {
+input:checked ~ label .hamburger::before {
   transform: rotate(90deg);
   top: 0;
 }
 
-input:checked~label .hamburger::after {
+input:checked ~ label .hamburger::after {
   transform: rotate(90deg);
   bottom: 0;
 }
 
-input:checked~label .container {
+input:checked ~ label .container {
   opacity: 0.9;
 }
 
@@ -96,8 +92,6 @@ input:checked~label .container {
   align-items: center;
   list-style: none;
   margin-bottom: 5px;
-
-
 }
 
 .ul2 li {
@@ -113,29 +107,22 @@ input:checked~label .container {
   transition: 0.4s;
 }
 
-
-
-
-
-@media(max-width:900px) {
-.container{
-  display: flex;
-}
+@media (max-width: 900px) {
+  .container {
+    display: flex;
+  }
   .menu {
     display: block;
-
   }
 
   .ul2 {
     display: none;
-
   }
 
-  input:checked~.ul2 {
+  input:checked ~ .ul2 {
     display: flex;
     width: 100%;
     flex-direction: column;
-
   }
 
   .ul2 li {
@@ -152,10 +139,8 @@ input:checked~label .container {
     display: flex;
     flex-direction: column;
     position: absolute;
-    top: 25px;
+    top: 50px;
     right: 25px;
     z-index: 10;
-
   }
-
 }
