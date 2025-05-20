@@ -2,6 +2,7 @@ import React from "react";
 import { useState, useEffect } from "react";
 import "./styled.css";
 import github from "@/assets/githubappimg.jpg";
+import auron from "@/assets/auron.png"
 import thelast from "@/assets/thelast.png";
 import logo from "@/assets/logoE.png";
 import enterface from "@/assets/interface.jpg";
@@ -12,31 +13,39 @@ export const Projects = () => {
   const [iframe, setiframe] = useState("");
   const [count, setCount] = useState<number>(4);
   const images = [
-    {
+     {
+      id: "0",
+      image: `${auron}`,
+      iframe: "https://auron.vercel.app/",
+    },
+      {
       id: "1",
+      image: `${leptop}`,
+      iframe: "https://ecommerce-70b6.onrender.com/",
+    },
+    {
+      id: "2",
       image: `${github}`,
       iframe: "https://jonassouza1.github.io/projeto-inicial-fetch-github-api/",
     },
     {
-      id: "2",
+      id: "3",
       image: `${thelast}`,
       iframe: "https://jonassouza1.github.io/projeto-the-last-of-us/",
     },
-    {
-      id: "3",
-      image: `${logo}`,
-      iframe: "https://jonassouza1.github.io/company-page/",
-    },
+   
     {
       id: "4",
       image: `${enterface}`,
       iframe: "https://jonassouza1.github.io/advanced-react-typescript-project",
     },
-    {
+    
+     {
       id: "5",
-      image: `${leptop}`,
-      iframe: "https://ecommerce-70b6.onrender.com/",
+      image: `${logo}`,
+      iframe: "https://jonassouza1.github.io/company-page/",
     },
+  
   ];
   useEffect(() => {
     const handleResize = async () => {
